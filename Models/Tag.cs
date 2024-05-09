@@ -8,6 +8,6 @@ namespace CIDM3312_Final_Project.Models
     public string TagName { get; set; } = string.Empty;
 
     public int RecipeID { get; set; }
-    public Recipe recipe { get; set; } = null!;
+    public Recipe Recipe { get; set; } = null!;
   }
 }

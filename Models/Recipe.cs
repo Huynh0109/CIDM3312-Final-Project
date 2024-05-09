@@ -16,11 +16,8 @@ namespace CIDM3312_Final_Project.Models
     public string Ingredient { get; set; } = string.Empty;
     public string Instruction { get; set; } = string.Empty;
 
-    public int UserId { get; set; } // Foreign key
-    public User User { get; set; } = null!; // Navigation property, each recipe posted by ONE user
+    public List<Category> Categories { get; set; } = null!; // Navigation property, each recipe can have MANY category
 
-    public List<Category> categories { get; set; } = null!; // Navigation property, each recipe can have MANY category
-
-    public Tag tag { get; set; } = null!;
+    public List<Tag> Tag { get; set; } = null!;
   }
 }

@@ -7,9 +7,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<RecipeDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("RecipeDbContext")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("RecipeDatabase")));
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CIDM3312_Final_Project.Migrations
 {
     [DbContext(typeof(RecipeDbContext))]
-    [Migration("20240430232118_InitialCreate")]
+    [Migration("20240502011023_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -61,12 +61,7 @@ namespace CIDM3312_Final_Project.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("RecipeId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Recipes");
                 });
@@ -92,25 +87,6 @@ namespace CIDM3312_Final_Project.Migrations
                     b.ToTable("Tags");
                 });
 
-            modelBuilder.Entity("CIDM3312_Final_Project.Models.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users");
-                });
-
             modelBuilder.Entity("CIDM3312_Final_Project.Models.Category", b =>
                 {
                     b.HasOne("CIDM3312_Final_Project.Models.Recipe", "recipe")
@@ -120,17 +96,6 @@ namespace CIDM3312_Final_Project.Migrations
                         .IsRequired();
 
                     b.Navigation("recipe");
-                });
-
-            modelBuilder.Entity("CIDM3312_Final_Project.Models.Recipe", b =>
-                {
-                    b.HasOne("CIDM3312_Final_Project.Models.User", "User")
-                        .WithMany("Recipes")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("CIDM3312_Final_Project.Models.Tag", b =>
@@ -150,11 +115,6 @@ namespace CIDM3312_Final_Project.Migrations
 
                     b.Navigation("tag")
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("CIDM3312_Final_Project.Models.User", b =>
-                {
-                    b.Navigation("Recipes");
                 });
 #pragma warning restore 612, 618
         }

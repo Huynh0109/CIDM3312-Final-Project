@@ -11,20 +11,6 @@ namespace CIDM3312_Final_Project.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Users",
-                columns: table => new
-                {
-                    UserId = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    UserName = table.Column<string>(type: "TEXT", nullable: false),
-                    Email = table.Column<string>(type: "TEXT", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Users", x => x.UserId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Recipes",
                 columns: table => new
                 {
@@ -33,18 +19,11 @@ namespace CIDM3312_Final_Project.Migrations
                     RecipeName = table.Column<string>(type: "TEXT", nullable: false),
                     RecipeDescription = table.Column<string>(type: "TEXT", nullable: false),
                     Ingredient = table.Column<string>(type: "TEXT", nullable: false),
-                    Instruction = table.Column<string>(type: "TEXT", nullable: false),
-                    UserId = table.Column<int>(type: "INTEGER", nullable: false)
+                    Instruction = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Recipes", x => x.RecipeId);
-                    table.ForeignKey(
-                        name: "FK_Recipes_Users_UserId",
-                        column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -93,11 +72,6 @@ namespace CIDM3312_Final_Project.Migrations
                 column: "RecipeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Recipes_UserId",
-                table: "Recipes",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Tags_RecipeID",
                 table: "Tags",
                 column: "RecipeID",
@@ -115,9 +89,6 @@ namespace CIDM3312_Final_Project.Migrations
 
             migrationBuilder.DropTable(
                 name: "Recipes");
-
-            migrationBuilder.DropTable(
-                name: "Users");
         }
     }
 }
