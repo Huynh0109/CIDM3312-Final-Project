@@ -27,7 +27,7 @@ namespace CIDM3312_Final_Project.Pages.Recipes
                 return NotFound();
             }
 
-            var recipe = await _context.Recipes.FirstOrDefaultAsync(m => m.RecipeId == id);
+            var recipe = await _context.Recipes.Include(m => m.Tag).Include(m => m.Categories).FirstOrDefaultAsync(m => m.RecipeId == id);
             if (recipe == null)
             {
                 return NotFound();

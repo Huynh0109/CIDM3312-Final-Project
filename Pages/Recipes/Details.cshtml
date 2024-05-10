@@ -35,6 +35,24 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Recipe.Instruction)
         </dd>
+        @foreach (var t in Model.Recipe.Tag)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => t.TagName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => t.TagName)
+            </dd>
+        }
+        @foreach (var c in Model.Recipe.Categories)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => c.CategoryName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => c.CategoryName)
+            </dd>
+        }
     </dl>
 </div>
 <div>

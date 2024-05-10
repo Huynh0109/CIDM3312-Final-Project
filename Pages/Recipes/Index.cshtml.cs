@@ -30,6 +30,7 @@ namespace CIDM3312_Final_Project.Pages.Recipes
 
         public async Task OnGetAsync()
         {
+
             var query = _context.Recipes.Select(r => r);
             var query1 = _context.Tags.Select(t => t);
 
