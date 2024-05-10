@@ -74,8 +74,7 @@ namespace CIDM3312_Final_Project.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Tags_RecipeID",
                 table: "Tags",
-                column: "RecipeID",
-                unique: true);
+                column: "RecipeID");
         }
 
         /// <inheritdoc />

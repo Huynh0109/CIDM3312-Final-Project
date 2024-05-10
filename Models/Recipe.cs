@@ -11,7 +11,7 @@ namespace CIDM3312_Final_Project.Models
     [Required]
     public string RecipeDescription { get; set;} = string.Empty;
 
-    [Display(Name = "Ingreadient")]
+    [Display(Name = "Ingredient")]
     [Required]
     public string Ingredient { get; set; } = string.Empty;
     public string Instruction { get; set; } = string.Empty;

@@ -78,40 +78,38 @@ namespace CIDM3312_Final_Project.Migrations
 
                     b.HasKey("TagID");
 
-                    b.HasIndex("RecipeID")
-                        .IsUnique();
+                    b.HasIndex("RecipeID");
 
                     b.ToTable("Tags");
                 });
 
             modelBuilder.Entity("CIDM3312_Final_Project.Models.Category", b =>
                 {
-                    b.HasOne("CIDM3312_Final_Project.Models.Recipe", "recipe")
-                        .WithMany("categories")
+                    b.HasOne("CIDM3312_Final_Project.Models.Recipe", "Recipe")
+                        .WithMany("Categories")
                         .HasForeignKey("RecipeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("recipe");
+                    b.Navigation("Recipe");
                 });
 
             modelBuilder.Entity("CIDM3312_Final_Project.Models.Tag", b =>
                 {
-                    b.HasOne("CIDM3312_Final_Project.Models.Recipe", "recipe")
-                        .WithOne("tag")
-                        .HasForeignKey("CIDM3312_Final_Project.Models.Tag", "RecipeID")
+                    b.HasOne("CIDM3312_Final_Project.Models.Recipe", "Recipe")
+                        .WithMany("Tag")
+                        .HasForeignKey("RecipeID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("recipe");
+                    b.Navigation("Recipe");
                 });
 
             modelBuilder.Entity("CIDM3312_Final_Project.Models.Recipe", b =>
                 {
-                    b.Navigation("categories");
+                    b.Navigation("Categories");
 
-                    b.Navigation("tag")
-                        .IsRequired();
+                    b.Navigation("Tag");
                 });
 #pragma warning restore 612, 618
         }

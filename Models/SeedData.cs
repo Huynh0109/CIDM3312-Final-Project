@@ -38,19 +38,23 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Air Fryer"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Air Fryer"}
+            }
         },
 
         new Recipe
         {
             RecipeName = "Air Fryer Chicken Tender",
-            RecipeDescription = "",
+            RecipeDescription = "Air Fryer chicken tender",
             Ingredient = "Chicken tenders, flour, Salt, Black pepper, Garlic powder, Eggs.",
             Instruction = "(1) Into a shallow bowl, add the flour, garlic powder, kosher salt, and black pepper and mix. (2) In a second shallow bowl, add the eggs and whisk them with a fork. (3) Into a third shallow bowl, add the panko breadcrumb and grated parmesan cheese and mix well. (4) Dip the chicken in the flour, coating it well, then dip it in the egg mixture, and finally dip it in the panko mixture, coating the chicken and pressing the breadcrumbs into the chicken to make sure they stick to the chicken. (5) Brush the air fryer basket with olive oil or your favorite oil. Place the chicken in the air fryer basket leaving spaces between each chicken tender. Cook in the air fryer for 10-12 minutes at 200c (400f) until the chicken is cooked through, golden brown, and crispy. (6) Garnish with freshly chopped parsley and serve hot!",
             Categories = new List<Category> {
               new Category {CategoryName = "Apetizer, Main Course"}
             },
-            Tag = new Tag {TagName = "Air Fryer"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Air Fryer"}
+            }
         },
 
         new Recipe
@@ -62,7 +66,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Vietnamese Food"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Vietnamese Food"}
+            }
         },
 
         new Recipe
@@ -74,7 +80,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Vietnamese Food"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Vietnamese Food"}
+            }
         },
 
         new Recipe
@@ -86,7 +94,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = "Fish, Easy"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Fish, Easy"}
+            }
         },
 
         new Recipe
@@ -98,7 +108,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Fish, Easy"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Fish, Easy"}
+            }
         },
 
         new Recipe
@@ -110,7 +122,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Breakfast"}
             },
-            Tag = new Tag {TagName = "Easy"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Easy"}
+            }
         },
 
         new Recipe
@@ -122,7 +136,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Breakfast"}
             },
-            Tag = new Tag {TagName = "Quick and easy"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Quick and easy"}
+            }
         },
 
         new Recipe
@@ -134,7 +150,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Breakfast"}
             },
-            Tag = new Tag {TagName = "Quick and easy"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Quick and easy"}
+            }
         },
 
         new Recipe
@@ -146,7 +164,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Appetizer"}
             },
-            Tag = new Tag {TagName = "Shrimp"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Shrimp"}
+            }
         },
 
         new Recipe
@@ -158,7 +178,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = "Shrimp"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Shrimp"}
+            }
         },
 
         new Recipe
@@ -170,7 +192,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Appetizer"}
             },
-            Tag = new Tag {TagName = "Shrimp"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Shrimp"}
+            }
         },
 
         new Recipe
@@ -182,7 +206,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = "Shrimp"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Shrimp"}
+            }
         },
 
         new Recipe
@@ -194,7 +220,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Salmon"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Salmon"}
+            }
         },
 
         new Recipe
@@ -206,7 +234,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Salmon"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Salmon"}
+            }
         },
 
         new Recipe
@@ -218,7 +248,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Salmon"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Salmon"}
+            }
         },
 
         new Recipe
@@ -230,7 +262,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = "Salmon"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Salmon"}
+            }
         },
 
         new Recipe
@@ -242,7 +276,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = "Salmon"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Salmon"}
+            }
         },
 
         new Recipe
@@ -254,7 +290,9 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = "Pork"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Pork"}
+            }
         },
 
         new Recipe
@@ -266,55 +304,65 @@ namespace CIDM3312_Final_Project.Models
             Categories = new List<Category> {
               new Category {CategoryName = "Main Dish"}
             },
-            Tag = new Tag {TagName = "Pork"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Pork"}
+            }
         },
 
         new Recipe
         {
             RecipeName = "BACON WRAPPED PORK CHOPS WITH BBQ SAUCE",
             RecipeDescription = "Absolutely delicious take on pork chops. The chops really benefit from the bacon, making them moist and flavorful. You can also do on the grill if you prefer.",
-            Ingredient = "",
-            Instruction = "",
+            Ingredient = "boneless pork chops, barbecue sauce, bacon, fresh rosemary, salt, pepper.",
+            Instruction = "(1) Preheat oven to 400°F. (2) On work surface layer slices of bacon side by side. Place each chop on 2 pieces of bacon (picture 2 slices of bacon as the upright part of an H, and the pork chop as the across section). Season with salt and pepper. (3) Slather the chops with barbeque sauce. Flip the chops and slather the other side as well, until barbeque sauce is used up. (4) Lay a sprig of rosemary on each chop (letting the ends hang over the edge, for easy removal before serving). (5) Wrap bacon slices tightly around each chop. (6) Prepare broiler pan (or any roasting pan with a rack), by spraying surface with cooking spray. (7) Bake for 30 to 35 minutes until a meat thermometer inserted in thickest part of the meat should register about 150°F (8) Turn oven to broil and broil on each side until bacon is crisp. (9) Let chops rest for a few minutes. Remove rosemary sprigs before serving. (10) If desired, serve with additional warmed barbeque sauce.  ",
             Categories = new List<Category> {
               new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = "Pork"}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Pork"}
+            }
         },
 
         new Recipe
         {
-            RecipeName = "",
-            RecipeDescription = "",
-            Ingredient = "",
-            Instruction = "",
+            RecipeName = "PARMESAN SAGE PORK CHOPS",
+            RecipeDescription = "Parmesan sage pork chops",
+            Ingredient = "breadcrumbs, parmesan cheese, dried rubbed sage, lemon rind, egg, flour, salt, pepper, butter, olive oil.",
+            Instruction = "(1) preheat oven to 425F degrees. (2) Mix in bowl, bread crumbs, grated parmesan cheese, dried rubbed sage and grated lemon peel. (3) Then, on a plate put flour seasoned with salt and pepper; coat chops with flour. (4) Dip in egg (5) Then dip in bread crumb mixture. (6) Melt butter and olive oil in a oven-proof skillet. (7) Brown chops until golden. (8) Transfer to oven and bake until meat thermometer says 150 degrees, about 20 minutes.",
             Categories = new List<Category> {
-              new Category {CategoryName = ""}
+              new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = ""}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Pork"}
+            }
         },
 
         new Recipe
         {
-            RecipeName = "",
-            RecipeDescription = "",
-            Ingredient = "",
-            Instruction = "",
+            RecipeName = "SZECHUAN NOODLES WITH SPICY BEEF SAUCE",
+            RecipeDescription = "Tired of using ground beef the same old way? Try this spicy dish! Feel free to double the sauce if you like it really saucy!",
+            Ingredient = "ground beef, onions, garlic, fresh ginger, dry crushed red pepper, sesame oil, cornstarch, beef broth, hoisin sauce, soy sauce, green onion.",
+            Instruction = "(1) Brown ground beef in a large skillet, stirring until it crumbles; drain and keep warm. (2) Pour sesame oil in pan and heat till hot. Saute onion and next 4 ingredients hot sesame oil until tender. (3) Combine cornstarch and beef broth, whisking until smooth. (4) Stir broth mixture, hoisin sauce, and soy sauce into onion mixture. (5) Bring to a boil, stirring constantly; boil, stirring constantly, 1 minute. (6) Stir in ground beef. (7) Toss with hot cooked pasta, and sprinkle with sliced green onions.",
             Categories = new List<Category> {
-              new Category {CategoryName = ""}
+              new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = ""}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Ground beef"}
+            }
         },
 
         new Recipe
         {
-            RecipeName = "",
-            RecipeDescription = "",
-            Ingredient = "",
-            Instruction = "",
+            RecipeName = "FRENCH ONION BURGERS",
+            RecipeDescription = "Burger",
+            Ingredient = "onions, worcestershire sauce, salt, ground beef, can mushrooms, hamburger buns",
+            Instruction = "(1) In a bowl, combine the onions, Worcestershire sauce, salt and mushrooms if using. Crumble beef over mixture and mix well. Shape into 4 patties. (2) Grill, uncovered, over medium heat or broil 4 inches from the heat for 6-9 minutes on each side or until no longer pink. Serve on buns with any condiments and toppings of your choice.",
             Categories = new List<Category> {
-              new Category {CategoryName = ""}
+              new Category {CategoryName = "Dinner"}
             },
-            Tag = new Tag {TagName = ""}
+            Tag = new List<Tag> {
+              new Tag {TagName = "Ground beef"}
+            }
         }
         );
 
