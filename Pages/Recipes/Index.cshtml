@@ -26,13 +26,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Recipe[0].RecipeDescription)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Recipe[0].Ingredient)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Recipe[0].Instruction)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -44,12 +37,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.RecipeDescription)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ingredient)
-            </td>
-            <th>
-                @Html.DisplayFor(modelItem => item.Instruction)
-            </th>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.RecipeId">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.RecipeId">Details</a> |

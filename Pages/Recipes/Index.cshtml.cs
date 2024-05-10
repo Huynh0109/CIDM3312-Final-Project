@@ -42,12 +42,6 @@ namespace CIDM3312_Final_Project.Pages.Recipes
                 case "recipe_desc":
                     query = query.OrderByDescending(r => r.RecipeName);
                     break;
-                case "tag_asc":
-                    query1 = query1.OrderBy(t => t.TagName);
-                    break;
-                case "tag_desc":
-                    query1 = query1.OrderByDescending(t => t.TagName);
-                    break;
             }
 
             Recipe = await query.Skip((PageNum-1)*PageSize).Take(PageSize).ToListAsync();

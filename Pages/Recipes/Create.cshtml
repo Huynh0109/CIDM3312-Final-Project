@@ -34,6 +34,16 @@
                 <span asp-validation-for="Recipe.Instruction" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Recipe.Tag" class="control-label"></label>
+                <input asp-for="Recipe.Tag" class="form-control" />
+                <span asp-validation-for="Recipe.Tag" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Recipe.Categories" class="control-label"></label>
+                <input asp-for="Recipe.Categories" class="form-control" />
+                <span asp-validation-for="Recipe.Categories" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>

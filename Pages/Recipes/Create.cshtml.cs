@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using CIDM3312_Final_Project.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CIDM3312_Final_Project.Pages.Recipes
 {
@@ -26,6 +27,12 @@ namespace CIDM3312_Final_Project.Pages.Recipes
         [BindProperty]
         public Recipe Recipe { get; set; } = default!;
 
+        [BindProperty]
+        public Tag Tag { get; set; } = default!;
+
+        [BindProperty]
+        public Category Category { get; set; } = default!;
+
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
@@ -35,6 +42,8 @@ namespace CIDM3312_Final_Project.Pages.Recipes
             }
 
             _context.Recipes.Add(Recipe);
+            _context.Tags.Add(Tag);
+            _context.Categories.Add(Category);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
